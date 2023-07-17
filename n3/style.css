@@ -1,5 +1,5 @@
 body {
-    background-color: #808080;
+    background-color: #901090;
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -9,8 +9,8 @@ body {
 .main {
     padding: 40px;
     width: 250px;
-    background-color: #42aaff;
-    border: 2px solid #000f;
+    background-color: #00bfff;
+    border: 2px solid #8fffce;
 }
 
 h1 {
@@ -20,6 +20,6 @@ h1 {
 
 p {
     padding: 5%;
-    border: 1px solid #fd0130;
+    border: 1px solid #8fffce;
     border-radius: 3px;
 }
