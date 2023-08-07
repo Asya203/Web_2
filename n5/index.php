@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   if (!$error && !empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])) {
     $user = 'u52941';
     $pass = '4049862';
-    $db = new PDO('mysql:host=localhost;dbname=u52943', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u52941', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     try{
       $get=$db->prepare("SELECT * FROM form WHERE id=?");
       $get->bindParam(1,$_SESSION['uid']);
@@ -269,9 +269,9 @@ else {
       setcookie('check_error', '', 100000);
     }
     
-	$user = 'u52943';
-	$pass = '2352838';	
-    $db = new PDO('mysql:host=localhost;dbname=u52943', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+	$user = 'u52941';
+	$pass = '4049862';	
+    $db = new PDO('mysql:host=localhost;dbname=u52941', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     if (!empty($_COOKIE[session_name()]) && !empty($_SESSION['login']) and !$errors) {
       $id=$_SESSION['uid'];
       $upd=$db->prepare("UPDATE form SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio WHERE id=:id");
