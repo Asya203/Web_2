@@ -122,7 +122,7 @@ if (!empty($messages)) {
 
             <p>
                 Отправка формы:
-                <input type="submit" value="Send" />
+                <input type="submit" value="Отправить" />
             </p>
         </form>
     </div>
