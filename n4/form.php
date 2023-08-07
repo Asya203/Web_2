@@ -9,8 +9,8 @@ body{
 .main{
     padding: 40px;
     width: 250px;
-    background-color:  #42aaff;
-    border: 2px solid #000f;
+    background-color: #9E44C1;
+    border: 2px solid #44C1B9;
 }
 
 h1{
@@ -22,11 +22,11 @@ h1{
     margin:2%;
     padding: 5%;
     border: 1px solid;
-    border-color: #fd0130;
+    border-color: #44C1B9;
     border-radius: 3px;
 }
 .error {
-    border-color: #fd0130;
+    border-color: #44C1B9;
   }
 </style>
 <?php
@@ -103,9 +103,9 @@ if (!empty($messages)) {
                 
                     <select name="super[]" multiple="multiple">
                     <?php if ($errors['super']) {print 'class="error"';} ?> >
-                    <option value="inv" <?php if($values['inv']==1){print 'selected';} ?>>Бессмертие</option>
-                    <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>прохождение сквозь стены</option>
-                    <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>левитация</option>
+                    <option value="inv" <?php if($values['inv']==1){print 'selected';} ?>>Невидимость</option>
+                    <option value="walk" <?php if($values['walk']==1){print 'selected';} ?>>Прохождение сквозь стены</option>
+                    <option value="fly" <?php if($values['fly']==1){print 'selected';} ?>>Левитация</option>
                     </select>
                 
             </div>
